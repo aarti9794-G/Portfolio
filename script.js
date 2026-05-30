@@ -1920,15 +1920,7 @@ window.addEventListener('load', () => {
     revealObserver.observe(el);
   });
 
-  // ---------- 12. SOCIAL LINK HANDLERS ----------
-  document.querySelectorAll('.social-icons a').forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const platform = link.getAttribute('aria-label') || 'social';
-      window.showToast(`Opening ${platform} profile...`);
-      setTimeout(() => window.open('#', '_blank'), 500);
-    });
-  });
+ 
 
   // ---------- 13. PAGE LOAD ANIMATION ----------
   window.addEventListener('load', () => {
