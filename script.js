@@ -1571,10 +1571,6 @@ window.addEventListener('load', () => {
 { title: "Logo 3", category: "Logos", type: "Logos", sub: "logos", img: "Logos/logo 3.png", tags: ["logo", "branding"], description: "Logo design 3." },
 { title: "Logo Banyan Roots", category: "Logos", type: "Logos", sub: "logos", img: "Logos/Logo BANYAN ROOTS.png", tags: ["logo", "banyan roots"], description: "Banyan Roots logo design." },
 
-{ title: "Icon1", category: "Logos", type: "Logos", sub: "logos", img: "Logos/icon1.png", tags: ["logo", "branding"], description: "Icon1." },
-{ title: "Icon2", category: "Logos", type: "Logos", sub: "logos", img: "Logos/icon2.png", tags: ["logo", "branding"], description: "Icon2." },
-{ title: "Icon3", category: "Logos", type: "Logos", sub: "logos", img: "Logos/icon3.png", tags: ["logo", "branding"], description: "Icon3." },
-{ title: "Logo 13", category: "Logos", type: "Logos", sub: "logos", img: "Logos/logo13.png", tags: ["logo", "branding"], description: "Logo13." },
 
 
 
