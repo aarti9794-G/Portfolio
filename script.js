@@ -1613,12 +1613,24 @@ window.addEventListener('load', () => {
 
 
 
-
 // ========== 3D ==========
 
 { title: "3D", category: "3D", type: "3D", sub: "", img: "3D/ezremove-Photoroom.png", tags: ["3D", "digital art"], description: "Digital 3D artwork 3." },
 
 { title: "3D Animation Video", category: "3D", type: "3d", sub: "", img: "3D/main 2.mp4", tags: ["3D", "animation", "video"], description: "3D animation video showcase." },
+
+
+
+{ title: "3D Animation Video1", category: "3D", type: "3d", sub: "", img: "3D/video1.mp4", tags: ["3D", "animation", "video"], description: "3D animation video showcase." },
+
+
+{ title: "3D Animation Video2", category: "3D", type: "3d", sub: "", img: "3D/video2.mp4", tags: ["3D", "animation", "video"], description: "3D animation video showcase." },
+
+
+{ title: "3D Animation Video3", category: "3D", type: "3d", sub: "", img: "3D/video3.mp4", tags: ["3D", "animation", "video"], description: "3D animation video showcase." },
+
+
+{ title: "3D", category: "3D", type: "3d", sub: "", img: "3D/2Ugly-dolls Poster.png", tags: ["3D", "animation", "video"], description: "3D animation video showcase." },
 
 
 
