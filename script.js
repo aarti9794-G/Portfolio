@@ -1574,7 +1574,6 @@ window.addEventListener('load', () => {
 
 
 
-
 { title: "Logo BR", category: "Logos", type: "Logos", sub: "logos", img: "Logos/logo br.png", tags: ["logo", "branding"], description: "BR logo design." },
 { title: "Logo 6", category: "Logos", type: "Logos", sub: "logos", img: "Logos/logo6.png", tags: ["logo", "branding"], description: "Logo design 6." },
 { title: "Logo 7", category: "Logos", type: "Logos", sub: "logos", img: "Logos/logo7.png", tags: ["logo", "branding"], description: "Logo design 7." },
@@ -1613,6 +1612,7 @@ window.addEventListener('load', () => {
 
 
 
+
 // ========== 3D ==========
 
 { title: "3D", category: "3D", type: "3D", sub: "", img: "3D/ezremove-Photoroom.png", tags: ["3D", "digital art"], description: "Digital 3D artwork 3." },
@@ -1631,9 +1631,6 @@ window.addEventListener('load', () => {
 
 
 { title: "3D", category: "3D", type: "3d", sub: "", img: "3D/2Ugly-dolls Poster.png", tags: ["3D", "animation", "video"], description: "3D animation video showcase." },
-
-
-
 
 
 
@@ -1898,7 +1895,7 @@ window.addEventListener('load', () => {
       const originalText = submitBtn.innerHTML;
       submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
       submitBtn.disabled = true;
-      
+            
       // Simulate form submission
       setTimeout(() => {
         window.showToast(`Thank you ${name}! I'll respond within 24 hours.`);
@@ -1908,7 +1905,7 @@ window.addEventListener('load', () => {
       }, 1500);
     });
   }
-
+    
   // ---------- 11. SCROLL REVEAL ANIMATION ----------
   const revealElements = document.querySelectorAll('.project-card, .featured-card, .contact-card, .timeline-item');
   const revealObserver = new IntersectionObserver((entries) => {
@@ -2033,3 +2030,24 @@ if (characterWrapper) {
     }, 1000);
   });
 }
+// ========== 3D CURSOR TRACKING ==========
+document.addEventListener('DOMContentLoaded', () => {
+  const character = document.getElementById('character');
+  
+  if (character) {
+    document.addEventListener('mousemove', (e) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      const centerX = window.innerWidth / 2;
+      const centerY = window.innerHeight / 2;
+
+      const percentX = (mouseX - centerX) / centerX;
+      const percentY = (mouseY - centerY) / centerY;
+
+      const rotateX = percentY * -5; 
+      const rotateY = percentX * 8;
+
+      character.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+  }
+});
